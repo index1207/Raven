@@ -3,7 +3,10 @@ project(Raven)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Raven main.cpp)
-
+# dependencies
 find_package(Crow CONFIG REQUIRED)
-target_link_libraries(Raven PRIVATE Crow::Crow asio::asio)
+find_package(sentry CONFIG REQUIRED)
+
+add_subdirectory(src/Raven)
+add_subdirectory(test)
+add_subdirectory(example)
