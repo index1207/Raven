@@ -7,6 +7,9 @@ set(CMAKE_CXX_STANDARD 20)
 find_package(Crow CONFIG REQUIRED)
 find_package(sentry CONFIG REQUIRED)
 
+set(INCLUDE_ROOT ${PROJECT_SOURCE_DIR}/include/Raven)
+set(SOURCE_ROOT ${PROJECT_SOURCE_DIR}/src/Raven)
+
 add_subdirectory(src/Raven)
 add_subdirectory(test)
 add_subdirectory(example)
