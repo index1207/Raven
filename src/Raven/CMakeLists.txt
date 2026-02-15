@@ -11,4 +11,10 @@ target_include_directories("${CMAKE_PROJECT_NAME}"
         PUBLIC $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>
         PRIVATE ${PROJECT_SOURCE_DIR}/src)
 
-target_link_libraries("${CMAKE_PROJECT_NAME}" PRIVATE Crow::Crow asio::asio)
+target_link_libraries("${CMAKE_PROJECT_NAME}"
+        PRIVATE
+            Crow::Crow
+            asio::asio
+            nlohmann_json::nlohmann_json
+            sentry::sentry
+)

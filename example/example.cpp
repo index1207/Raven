@@ -1,11 +1,11 @@
-﻿#include <Raven/Framework/WebApplication/RpcService.hpp>
+﻿#include <Raven/Framework/WebApplication/ControllerBase.hpp>
 
 #include  <crow.h>
 
 int main() {
     crow::App<> app;
-    raven::RpcService rpcSvc;
-    rpcSvc.RegisterRpcEndpoint(app);
+    auto conBase = new raven::ControllerBase("base");
+    conBase->Register(app);
 
-    app.port(5000).multithreaded().run();
+    app.port(8989).multithreaded().run();
 }

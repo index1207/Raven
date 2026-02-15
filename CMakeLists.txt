@@ -5,6 +5,7 @@ set(CMAKE_CXX_STANDARD 20)
 
 # dependencies
 find_package(Crow CONFIG REQUIRED)
+find_package(nlohmann_json CONFIG REQUIRED)
 find_package(sentry CONFIG REQUIRED)
 
 set(INCLUDE_ROOT ${PROJECT_SOURCE_DIR}/include/Raven)
