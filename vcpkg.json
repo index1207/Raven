@@ -4,6 +4,7 @@
   "dependencies": [
     "crow",
     "nlohmann-json",
+    "jwt-cpp",
     "sentry-native"
   ]
 }

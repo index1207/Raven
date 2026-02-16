@@ -2,7 +2,7 @@
   "version": 6,
   "configurePresets": [
     {
-      "name": "win64-vcpkg-debug",
+      "name": "vcpkg-debug",
       "displayName": "vcpkg manifest",
       "generator": "Ninja",
       "cacheVariables": {
@@ -14,7 +14,7 @@
       }
     },
     {
-      "name": "win64-vcpkg-release",
+      "name": "vcpkg-release",
       "displayName": "vcpkg manifest",
       "generator": "Ninja",
       "cacheVariables": {
