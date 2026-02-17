@@ -15,6 +15,6 @@ target_link_libraries("${CMAKE_PROJECT_NAME}"
         PRIVATE
             Crow::Crow
             asio::asio
-            nlohmann_json::nlohmann_json
+            reflectcpp::reflectcpp
             sentry::sentry
 )
